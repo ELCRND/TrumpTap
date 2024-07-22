@@ -1,0 +1,121 @@
+.footer {
+  padding-top: 46px;
+  padding-bottom: 36px;
+  background-color: #f00;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
+}
+
+.footer__container {
+  width: min(1326px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__top {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1120px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 26px;
+  }
+}
+
+.footer__logo {
+  margin-right: 12px;
+  @media screen and (max-width: 1120px) {
+    margin-left: auto;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+}
+
+.footer__btn {
+  width: 224px;
+  height: 75px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 32px;
+  line-height: 105%;
+  text-transform: uppercase;
+  color: var(--blue);
+  transition: background-color 200ms ease;
+
+  @media screen and (max-width: 1120px) {
+    margin-right: auto;
+  }
+  @media screen and (max-width: 768px) {
+    width: 149px;
+    height: 56px;
+    margin: 0;
+    font-size: 22px;
+  }
+
+  &:hover {
+    background-color: #ccc;
+  }
+  &:active {
+    background-color: #fff;
+    border-color: #ccc;
+  }
+}
+
+.footer__navigation {
+  margin-left: auto;
+  display: flex;
+  gap: 60px;
+  font-size: 22px;
+  line-height: 105%;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1120px) {
+    margin-top: 20px;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .navigation__link {
+    position: relative;
+    &::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      background-color: #fff;
+      transition: all 200ms ease;
+    }
+
+    &:hover {
+      &::after {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer__bottom {
+  font-size: 20px;
+  line-height: 105%;
+  text-transform: uppercase;
+}

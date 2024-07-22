@@ -1,0 +1,61 @@
+.tokenomic {
+  padding-top: 216px;
+  position: relative;
+}
+
+.tokenomic__container {
+  width: min(1380px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.tokenomic__title-wrap {
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  h2 {
+    font-family: var(--second-family);
+    font-size: 73px;
+    line-height: 93%;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--red);
+  }
+}
+
+.tokenomic__statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.statistics__item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statistics__name {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.statistics__num {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #e91d1d;
+}
+
+.statistics__description {
+  font-size: 18px;
+}
