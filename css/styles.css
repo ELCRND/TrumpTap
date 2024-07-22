@@ -1001,6 +1001,7 @@ body {
 
 .tokenomic {
   padding-top: 216px;
+  position: relative;
 }
 
 .tokenomic__container {
