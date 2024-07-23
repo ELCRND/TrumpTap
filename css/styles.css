@@ -1116,6 +1116,7 @@ body {
   .statistics__description {
     font-size: 12px;
     text-align: center;
+    text-transform: uppercase;
     display: block;
   }
 }
