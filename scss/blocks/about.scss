@@ -42,10 +42,10 @@
   font-size: 40px;
   text-transform: uppercase;
   color: #fff;
-  text-align: center;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 28px;
+    text-align: center;
   }
 }
 
@@ -97,24 +97,24 @@
   }
 }
 
-.statistics__num {
+.about__statistics .statistics__num {
   display: block;
   font-weight: 400;
   font-size: 68px;
   line-height: 80%;
   color: #ff3434;
-  text-shadow: 0 0 12px 0 rgba(255, 52, 52, 0.3);
+  text-shadow: 0 0 12px rgba(255, 52, 52, 0.3);
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
   }
 }
 
-.statistics__name {
+.about__statistics .statistics__name {
   font-weight: 400;
   font-size: 18px;
   color: #ff3434;
-  text-shadow: 0 0 12px 0 rgba(255, 52, 52, 0.3);
+  text-shadow: 0 0 12px rgba(255, 52, 52, 0.3);
 
   @media screen and (max-width: 768px) {
     font-size: 8px;
